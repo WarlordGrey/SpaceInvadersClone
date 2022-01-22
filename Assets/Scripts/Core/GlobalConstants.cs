@@ -14,6 +14,8 @@ namespace Core
         public const int kMaxLoadingDotsCount = 3;
         public readonly static string kBaseLoadingTextString = "LOADING";
 
+        public static readonly string kPlayerDataKey = "unknownDataStairsRunner";
+
     }
 
 }

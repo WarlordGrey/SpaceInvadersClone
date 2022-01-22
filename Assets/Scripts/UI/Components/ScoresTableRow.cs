@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using Data.Player;
 
 public class ScoresTableRow : MonoBehaviour
 {
@@ -11,10 +12,10 @@ public class ScoresTableRow : MonoBehaviour
     [SerializeField]
     private Text _dateText;
 
-    public void UpdateRow(int score, DateTime dateTime)
+    public void UpdateRow(HighScoreData scoreData)
     {
-        _scoreText.text = score.ToString("D4");
-        _dateText.text = dateTime.ToString("MM/dd/yyyy HH:mm");
+        _scoreText.text = scoreData.score.ToString("D4");
+        _dateText.text = scoreData.scoreDate.ToString("MM/dd/yyyy HH:mm");
     }
 
 }

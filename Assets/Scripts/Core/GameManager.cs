@@ -87,6 +87,11 @@ namespace Core
             }
         }
 
+        private void OnApplicationPause(bool pause)
+        {
+            EventsHub.OnApplicationPaused.OnNext(pause);
+        }
+
         private void OnPlayerDamaged(Unit unit)
         {
             _livesCount--;

@@ -15,6 +15,8 @@ namespace Core {
         public static readonly Subject<Unit> LevelLoaded = new Subject<Unit>();
         public static readonly Subject<LevelFinishedData> FinishLevel = new Subject<LevelFinishedData>();
 
+        public static readonly Subject<bool> OnApplicationPaused = new Subject<bool>();
+
         public static readonly Subject<Unit> PauseGame = new Subject<Unit>();
         public static readonly Subject<Unit> UnPauseGame = new Subject<Unit>();
 
