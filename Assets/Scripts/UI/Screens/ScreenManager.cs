@@ -50,7 +50,7 @@ namespace UI.Screens
             disposables.Add(EventsHub.InitCompleted.Subscribe(OnInitCompleted).AddTo(this));
             disposables.Add(EventsHub.FinishLevel.Subscribe(OnFinishLevel).AddTo(this));
             disposables.Add(EventsHub.StartGame.Subscribe(OnStartGame).AddTo(this));
-            disposables.Add(EventsHub.GoToMainMenu.Subscribe(OnHighScoresShow).AddTo(this));
+            disposables.Add(EventsHub.GoToMainMenu.Subscribe(OnMainMenuShow).AddTo(this));
             disposables.Add(EventsHub.GoToHighScores.Subscribe(OnHighScoresShow).AddTo(this));
         }
 
