@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
+using UI.Screens;
 
 namespace Core {
 
@@ -9,11 +10,14 @@ namespace Core {
     {
 
         [SerializeField]
-        private GameManager gameManagerPrefab;
+        private GameManager _gameManagerPrefab;
+        [SerializeField]
+        private ScreenManager _screenManagerPrefab;
 
         public override void InstallBindings()
         {
-            Container.Bind<GameManager>().FromComponentInNewPrefab(gameManagerPrefab).AsSingle().NonLazy();
+            Container.Bind<GameManager>().FromComponentInNewPrefab(_gameManagerPrefab).AsSingle().NonLazy();
+            Container.Bind<ScreenManager>().FromComponentInNewPrefab(_screenManagerPrefab).AsSingle().NonLazy();
         }
 
     }

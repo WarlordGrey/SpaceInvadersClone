@@ -11,6 +11,9 @@ namespace Core
         public const int kBaseEnemiesCount = 30;
         public const int kBaseLivesCount = 3;
 
+        public const int kMaxLoadingDotsCount = 3;
+        public readonly static string kBaseLoadingTextString = "LOADING";
+
     }
 
 }
