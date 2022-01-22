@@ -12,21 +12,10 @@ public abstract class AGameState
 
     }
 
-    protected void UpdateNextState(AGameState nextState)
+    public virtual bool CanUseAbilities()
     {
-        _nextState = nextState;
+        return false;
     }
-    
-    public AGameState GetNextState()
-    {
-        if(_nextState == null)
-        {
-            return GetStandardNextState();
-        }
-        return _nextState;
-    }
-
-    protected abstract AGameState GetStandardNextState();
 
     public abstract void Init();
 

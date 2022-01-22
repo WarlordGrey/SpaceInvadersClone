@@ -12,9 +12,9 @@ namespace States.GameStates
 
         }
 
-        protected override AGameState GetStandardNextState()
+        public override bool CanUseAbilities()
         {
-            return new FinishedState();
+            return true;
         }
 
     }

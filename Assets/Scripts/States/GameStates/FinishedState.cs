@@ -12,11 +12,6 @@ namespace States.GameStates
             
         }
 
-        protected override AGameState GetStandardNextState()
-        {
-            return new WaitGameState();
-        }
-
     }
 
 }
